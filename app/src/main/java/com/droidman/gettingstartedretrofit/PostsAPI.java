@@ -8,5 +8,8 @@ import retrofit2.http.GET;
 public interface PostsAPI {
 
     @GET("posts")
-    Call<List<Post>> getPosts();
+    Call<List<PostsModel>> getPosts();
+
+    @GET("users")
+    Call<List<UsersModel>> getUsers();
 }

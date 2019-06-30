@@ -2,7 +2,7 @@ package com.droidman.gettingstartedretrofit;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Post {
+public class PostsModel {
 
     private int userId;
     private int id;
@@ -25,4 +25,5 @@ public class Post {
     public String getDescription() {
         return description;
     }
+
 }

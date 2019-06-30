@@ -24,13 +24,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mResult = findViewById(R.id.result);
 
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://jsonplaceholder.typicode.com/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
+        Call<List<Post>> call = Helper.getPostAPI().getPosts(); //Each Call from the created PostsAPI can make a synchronous or asynchronous HTTP request to the remote webserver.
 
-        PostAPI postAPI = retrofit.create(PostAPI.class);
-        Call<List<Post>> call = postAPI.getPosts();
         call.enqueue(new Callback<List<Post>>() {
             @Override
             public void onResponse(Call<List<Post>> call, Response<List<Post>> response) {

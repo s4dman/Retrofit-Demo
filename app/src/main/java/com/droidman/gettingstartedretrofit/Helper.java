@@ -10,9 +10,9 @@ public class Helper {
             .addConverterFactory(GsonConverterFactory.create())
             .build();
 
-    private static PostsAPI postAPI = retrofit.create(PostsAPI.class); // The Retrofit class generates an implementation of the PostsAPI interface.
+    private static PostsAPI postsAPI = retrofit.create(PostsAPI.class); // The Retrofit class generates an implementation of the PostsAPI interface.
 
-    public static PostsAPI getPostAPI() {
-        return postAPI;
+    public static PostsAPI getPostsAPI() {
+        return postsAPI;
     }
 }

@@ -1,4 +1,4 @@
-package com.droidman.gettingstartedretrofit.Adapter;
+package com.droidman.gettingstartedretrofit.Adapters;
 
 import android.content.Context;
 import android.support.annotation.NonNull;

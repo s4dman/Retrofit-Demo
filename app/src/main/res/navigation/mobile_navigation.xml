@@ -18,8 +18,8 @@
         tools:layout="@layout/fragment_post" />
 
     <fragment
-        android:id="@+id/navigation_put"
-        android:name="com.droidman.gettingstartedretrofit.Fragments.PutFragment"
-        android:label="@string/title_put"
-        tools:layout="@layout/fragment_put" />
+        android:id="@+id/navigation_delete"
+        android:name="com.droidman.gettingstartedretrofit.Fragments.DeleteFragment"
+        android:label="@string/title_delete"
+        tools:layout="@layout/fragment_delete" />
 </navigation>

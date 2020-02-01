@@ -31,6 +31,7 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull PostsAdapter.ViewHolder viewHolder, int i) {
+        viewHolder.mPostId.setText(mPostsModelList.get(i).getId());
         viewHolder.mTitle.setText(mPostsModelList.get(i).getTitle());
         viewHolder.mDescription.setText(mPostsModelList.get(i).getDescription());
     }
@@ -41,11 +42,12 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        TextView mTitle, mDescription;
+        TextView mPostId, mTitle, mDescription;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
+            mPostId = itemView.findViewById(R.id.post_id);
             mTitle = itemView.findViewById(R.id.post_title);
             mDescription = itemView.findViewById(R.id.post_details);
         }

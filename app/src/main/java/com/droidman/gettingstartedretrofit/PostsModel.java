@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 public class PostsModel {
 
     private String userId;
-    private Integer id;
+    private String id;
     private String title;
     @SerializedName("body")
     private String description;
@@ -20,7 +20,7 @@ public class PostsModel {
         return userId;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 

@@ -52,7 +52,7 @@ public class GetFragment extends Fragment {
     }
 
     private void getPosts() {
-        final Call<List<PostsModel>> postsCall = Helper.getPostsAPI().getPosts();
+        Call<List<PostsModel>> postsCall = Helper.getPostsAPI().getPosts();
 
         postsCall.enqueue(new Callback<List<PostsModel>>() {
             @Override
